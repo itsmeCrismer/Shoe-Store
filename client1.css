@@ -1,0 +1,306 @@
+    @keyframes fadeUp {
+        0% {
+            opacity: 0;
+            transform: translateY(30px);
+        }
+
+        100% {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    }
+
+    @keyframes bgZoom {
+        0% {
+            background-size: 100%;
+        }
+
+        100% {
+            background-size: 110%;
+        }
+    }
+
+    @keyframes textGlow {
+
+        0%,
+        100% {
+            text-shadow: 0 0 10px rgb(15, 173, 226), 0 0 20px rgb(10, 151, 216);
+        }
+
+        50% {
+            text-shadow: 0 0 20px rgb(12, 145, 207), 0 0 30px rgba(36, 160, 249, 0.956);
+        }
+    }
+
+    @keyframes slowMove {
+
+        0%,
+        100% {
+            transform: translate(0, 0);
+        }
+
+        50% {
+            transform: translate(10px, -10px);
+        }
+    }
+
+    @keyframes pulseSlow {
+
+        0%,
+        100% {
+            opacity: 0.6;
+            transform: scale(1);
+        }
+
+        50% {
+            opacity: 1;
+            transform: scale(1.1);
+        }
+    }
+
+    .animate-fadeUp {
+        animation: fadeUp 1s ease forwards;
+    }
+
+    .animate-bgZoom {
+        animation: bgZoom 20s ease-in-out infinite alternate;
+    }
+
+    .animate-textGlow {
+        animation: textGlow 3s ease-in-out infinite;
+    }
+
+    .animate-slowMove {
+        animation: slowMove 10s ease-in-out infinite alternate;
+    }
+
+    .animate-pulseSlow {
+        animation: pulseSlow 6s ease-in-out infinite;
+    }
+
+    .hide-scrollbar::-webkit-scrollbar {
+        display: none;
+    }
+
+    .hide-scrollbar {
+        -ms-overflow-style: none;
+        scrollbar-width: none;
+    }
+
+    @keyframes bgZoom {
+        0% {
+            transform: scale(1);
+        }
+
+        100% {
+            transform: scale(1.1);
+        }
+    }
+
+    @keyframes fadeSlideDown {
+        0% {
+            opacity: 0;
+            transform: translateY(-40px);
+        }
+
+        100% {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    }
+
+    @keyframes fadeSlideUp {
+        0% {
+            opacity: 0;
+            transform: translateY(40px);
+        }
+
+        100% {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    }
+
+    @keyframes textShimmer {
+        0% {
+            background-position: 0% 50%;
+        }
+
+        100% {
+            background-position: 100% 50%;
+        }
+    }
+
+    @keyframes floatSparkle {
+
+        0%,
+        100% {
+            transform: translateY(0);
+            opacity: 0.5;
+        }
+
+        50% {
+            transform: translateY(-15px);
+            opacity: 1;
+        }
+    }
+
+    @keyframes pulseSlow {
+
+        0%,
+        100% {
+            opacity: 0.4;
+            transform: scale(1);
+        }
+
+        50% {
+            opacity: 0.7;
+            transform: scale(1.05);
+        }
+    }
+
+    @keyframes bounceXY {
+
+        0%,
+        100% {
+            transform: translate(-50%, -50%) translate(0, 0);
+        }
+
+        25% {
+            transform: translate(-50%, -50%) translate(25px, -20px);
+        }
+
+        50% {
+            transform: translate(-50%, -50%) translate(-25px, 20px);
+        }
+
+        75% {
+            transform: translate(-50%, -50%) translate(20px, -25px);
+        }
+    }
+
+    .animate-bounceXY {
+        animation: bounceXY 6s ease-in-out infinite;
+    }
+
+    .animate-bgZoom {
+        animation: bgZoom 20s ease-in-out infinite alternate;
+    }
+
+    .animate-fadeSlideDown {
+        animation: fadeSlideDown 1.2s ease-out forwards;
+    }
+
+    .animate-fadeSlideUp {
+        animation: fadeSlideUp 1.2s ease-out forwards;
+    }
+
+    .animate-textShimmer {
+        background-size: 200% auto;
+        animation: textShimmer 3s linear infinite;
+    }
+
+    .animate-floatSparkle {
+        animation: floatSparkle 4s ease-in-out infinite;
+    }
+
+    .animate-pulseSlow {
+        animation: pulseSlow 6s ease-in-out infinite;
+    }
+
+    @keyframes floatRotate {
+
+        0% {
+            transform: rotate(2deg) translateY(1px);
+        }
+
+        50% {
+            transform: rotate(-10deg) translateY(3px);
+        }
+
+        100% {
+            transform: rotate(2deg) translateY(1px);
+        }
+    }
+
+    @keyframes textShimmer {
+        0% {
+            background-position: 0% 50%;
+        }
+
+        100% {
+            background-position: 200% 50%;
+        }
+    }
+
+    @keyframes fadeSlideDown {
+        0% {
+            opacity: 0;
+            transform: translateY(-40px);
+        }
+
+        100% {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    }
+
+    @keyframes fadeSlideUp {
+        0% {
+            opacity: 0;
+            transform: translateY(40px);
+        }
+
+        100% {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    }
+
+    @keyframes blobMove1 {
+
+        0%,
+        100% {
+            transform: translate(0, 0) scale(1);
+        }
+
+        50% {
+            transform: translate(40px, -30px) scale(1.05);
+        }
+    }
+
+    @keyframes blobMove2 {
+
+        0%,
+        100% {
+            transform: translate(0, 0) scale(1);
+        }
+
+        50% {
+            transform: translate(-40px, 30px) scale(1.1);
+        }
+    }
+
+    .animate-floatRotate {
+        animation: floatRotate 10s ease-in-out infinite;
+    }
+
+    .animate-textShimmer {
+        animation: textShimmer 3s linear infinite;
+    }
+
+    .animate-fadeSlideDown {
+        animation: fadeSlideDown 1s ease-out forwards;
+    }
+
+    .animate-fadeSlideUp {
+        animation: fadeSlideUp 1s ease-out forwards;
+    }
+
+    .animate-blob1 {
+        animation: blobMove1 8s ease-in-out infinite alternate;
+    }
+
+    .animate-blob2 {
+        animation: blobMove2 8s ease-in-out infinite alternate;
+    }
